@@ -1,0 +1,11 @@
+/Users/jasonjuanias/Desktop/Proyecto Redarbor/RedArborAPI/src/RedArbor.Domain/bin/Debug/net8.0/RedArbor.Domain.deps.json
+/Users/jasonjuanias/Desktop/Proyecto Redarbor/RedArborAPI/src/RedArbor.Domain/bin/Debug/net8.0/RedArbor.Domain.dll
+/Users/jasonjuanias/Desktop/Proyecto Redarbor/RedArborAPI/src/RedArbor.Domain/bin/Debug/net8.0/RedArbor.Domain.pdb
+/Users/jasonjuanias/Desktop/Proyecto Redarbor/RedArborAPI/src/RedArbor.Domain/obj/Debug/net8.0/RedArbor.Domain.GeneratedMSBuildEditorConfig.editorconfig
+/Users/jasonjuanias/Desktop/Proyecto Redarbor/RedArborAPI/src/RedArbor.Domain/obj/Debug/net8.0/RedArbor.Domain.AssemblyInfoInputs.cache
+/Users/jasonjuanias/Desktop/Proyecto Redarbor/RedArborAPI/src/RedArbor.Domain/obj/Debug/net8.0/RedArbor.Domain.AssemblyInfo.cs
+/Users/jasonjuanias/Desktop/Proyecto Redarbor/RedArborAPI/src/RedArbor.Domain/obj/Debug/net8.0/RedArbor.Domain.csproj.CoreCompileInputs.cache
+/Users/jasonjuanias/Desktop/Proyecto Redarbor/RedArborAPI/src/RedArbor.Domain/obj/Debug/net8.0/RedArbor.Domain.dll
+/Users/jasonjuanias/Desktop/Proyecto Redarbor/RedArborAPI/src/RedArbor.Domain/obj/Debug/net8.0/refint/RedArbor.Domain.dll
+/Users/jasonjuanias/Desktop/Proyecto Redarbor/RedArborAPI/src/RedArbor.Domain/obj/Debug/net8.0/RedArbor.Domain.pdb
+/Users/jasonjuanias/Desktop/Proyecto Redarbor/RedArborAPI/src/RedArbor.Domain/obj/Debug/net8.0/ref/RedArbor.Domain.dll
