@@ -1,0 +1,11 @@
+src/RedArbor.API/obj/
+src/RedArbor.API/bin/
+src/RedArbor.Infrastructure/obj/
+src/RedArbor.Infrastructure/bin/
+src/RedArbor.Application/bin/
+src/RedArbor.Application/obj/
+src/RedArborAPI.Tests/bin/
+src/RedArborAPI.Tests/obj/
+src/RedArbor.Domain/obj/
+src/RedArbor.Domain/obj/Debug/
+src/RedArbor.Domain/bin/

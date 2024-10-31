@@ -1,5 +1,6 @@
 using MediatR;
 using RedArbor.Application.Commands.Commands;
+using RedArbor.Application.Dtos;
 using RedArbor.Domain.Models;
 using RedArbor.Infrastructure.Repositories.Interfaces;
 

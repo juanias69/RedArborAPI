@@ -1,0 +1,31 @@
+services:
+  sqlserver:
+    image: mcr.microsoft.com/mssql/server
+    environment:
+      SA_PASSWORD: "redarbor.2024"
+      ACCEPT_EULA: "Y"
+    ports:
+      - "1433:1433"
+    volumes:
+      - ./init-db:/docker-entrypoint-initdb.d/init-db
+    networks:
+      - app-network
+
+  redarbor-api:
+    build:
+      context: .
+      dockerfile: RedArbor.API/Dockerfile
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ConnectionStrings__DefaultConnection: "Server=sqlserver,1433;Database=EmployeeDB;User Id=sa;Password=redarbor.2024;TrustServerCertificate=True;"
+    ports:
+      - "9080:8080"
+      - "9081:8081"
+    depends_on:
+      - sqlserver
+    networks:
+      - app-network
+
+networks:
+  app-network:
+    driver: bridge

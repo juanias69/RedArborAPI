@@ -21,8 +21,26 @@ public class EmployeeWriteRepository : IEmployeeWriteRepository
 
     public async Task UpdateAsync(Employee employee)
     {
-        _context.Employees.Update(employee);
-        await _context.SaveChangesAsync();
+        var existingEmployee = await _context.Employees.FindAsync(employee.Id);
+
+        if (existingEmployee != null)
+        {
+            existingEmployee.CompanyId = employee.CompanyId;
+            existingEmployee.CreatedOn = employee.CreatedOn;
+            existingEmployee.DeletedOn = employee.DeletedOn;
+            existingEmployee.Email = employee.Email;
+            existingEmployee.Fax = employee.Fax;
+            existingEmployee.Name = employee.Name;
+            existingEmployee.Lastlogin = employee.Lastlogin;
+            existingEmployee.Password = employee.Password;
+            existingEmployee.PortalId = employee.PortalId;
+            existingEmployee.RoleId = employee.RoleId;
+            existingEmployee.StatusId = employee.StatusId;
+            existingEmployee.Telephone = employee.Telephone;
+            existingEmployee.UpdatedOn = employee.UpdatedOn;
+            existingEmployee.Username = employee.Username;
+            await _context.SaveChangesAsync();
+        }
     }
 
     public async Task DeleteAsync(int id)

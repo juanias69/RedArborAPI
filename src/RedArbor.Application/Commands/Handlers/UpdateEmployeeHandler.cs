@@ -1,6 +1,7 @@
 
 using MediatR;
 using RedArbor.Application.Commands.Commands;
+using RedArbor.Application.Dtos;
 using RedArbor.Domain.Models;
 using RedArbor.Infrastructure.Repositories.Interfaces;
 
@@ -19,8 +20,12 @@ public class UpdateEmployeeHandler : IRequestHandler<UpdateEmployeeCommand, Resp
     {
         try
         {
+            if (request.employee.Id == null)
+                return new ResponseResultDto() { Success = false, Message = "El ID del empleado no puede ser nulo." };
+
             var employee = new Employee
             {
+                Id = (int)request.employee.Id,
                 CompanyId = request.employee.CompanyId,
                 CreatedOn = request.employee.CreatedOn,
                 DeletedOn = request.employee.DeletedOn,
@@ -38,7 +43,7 @@ public class UpdateEmployeeHandler : IRequestHandler<UpdateEmployeeCommand, Resp
             };
             await _repository.UpdateAsync(employee);
 
-            return new ResponseResultDto() { Success = true, Message = "Registro insertado correctamente" };
+            return new ResponseResultDto() { Success = true, Message = "Registro actualizado correctamente" };
         }
         catch (Exception ex)
         {

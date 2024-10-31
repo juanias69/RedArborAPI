@@ -1,7 +1,7 @@
 using System;
 using MediatR;
 using RedArbor.Application.Commands.Commands;
-using RedArbor.Domain.Models;
+using RedArbor.Application.Dtos;
 using RedArbor.Infrastructure.Repositories.Interfaces;
 
 namespace RedArbor.Application.Commands.Handlers;

@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RedArbor.Application", "Red
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RedArborAPI.Tests", "RedArborAPI.Tests\RedArborAPI.Tests.csproj", "{CD99A352-1BEE-4E48-862D-CCC69EF4BFBA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RedArbor.API", "RedArbor.API\RedArbor.API.csproj", "{15903256-DD98-449D-9DFA-CFA729ECA7DB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -36,5 +38,9 @@ Global
 		{CD99A352-1BEE-4E48-862D-CCC69EF4BFBA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CD99A352-1BEE-4E48-862D-CCC69EF4BFBA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CD99A352-1BEE-4E48-862D-CCC69EF4BFBA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{15903256-DD98-449D-9DFA-CFA729ECA7DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{15903256-DD98-449D-9DFA-CFA729ECA7DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{15903256-DD98-449D-9DFA-CFA729ECA7DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{15903256-DD98-449D-9DFA-CFA729ECA7DB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
