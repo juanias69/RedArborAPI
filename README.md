@@ -24,11 +24,11 @@ La aplicación está dockerizada para facilitar su despliegue e incluye tanto la
 
 1. Clona este repositorio:
    ```bash
-   git clone [https://github.com/tu-usuario/tu-repositorio.git](https://github.com/juanias69/RedArborAPI.git)
+   git clone https://github.com/tu-usuario/tu-repositorio.git
 
 2. Navega al directorio del proyecto:
    ```bash
-   cd Proyecto Redarbor/RedArborAPI/src
+   cd RedArborAPI-main/src
 
 ## Uso
 
