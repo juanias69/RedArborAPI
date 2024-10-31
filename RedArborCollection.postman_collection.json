@@ -1,0 +1,286 @@
+{
+	"info": {
+		"_postman_id": "2ae010a0-807c-4924-8911-35689bb3a12e",
+		"name": "RedArborCollection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "21956755"
+	},
+	"item": [
+		{
+			"name": "Employees",
+			"item": [
+				{
+					"name": "GetAllEmployees",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "accept",
+								"value": "text/plain"
+							},
+							{
+								"key": "conte",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ0ZXN0IiwianRpIjoiOTk0Y2FlNTQtMGIzNC00MWJjLWFjYzMtNmNkNGQxYWJmZTUyIiwiZXhwIjoxNzMwMzc2OTMxLCJpc3MiOiJFbXBsb3llZUFwaSIsImF1ZCI6IkVtcGxveWVlQXBpQXVkaWVuY2UifQ.fJtjRzNSs32gMWOnHA5CxfhnWYYiHouFI3dt7c8YRLY",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "http://localhost:9080/api/redarbor",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9080",
+							"path": [
+								"api",
+								"redarbor"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetAnItemByID",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "accept",
+								"value": "text/plain"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:9080/api/redarbor/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9080",
+							"path": [
+								"api",
+								"redarbor",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "AddNewEmployee",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "accept",
+								"value": "text/plain"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"CompanyId\": 1,\n    \"CreatedOn\": \"2000-01-01T00:00:00\",\n    \"DeletedOn\": \"2000-01-01T00:00:00\",\n    \"Email\": \"test1@test.test.tmp\",\n    \"Fax\": \"000.000.000\",\n    \"Name\": \"test1\",\n    \"Lastlogin\": \"2000-01-01T00:00:00\",\n    \"Password\": \"test\",\n    \"PortalId\": 1,\n    \"RoleId\": 1,\n    \"StatusId\": 1,\n    \"Telephone\": \"000.000.000\",\n    \"UpdatedOn\": \"2000-01-01T00:00:00\",\n    \"Username\": \"test1\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9080/api/redarbor",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9080",
+							"path": [
+								"api",
+								"redarbor"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "New Request",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [
+							{
+								"key": "accept",
+								"value": "*/*"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"CompanyId\": 1,\n    \"CreatedOn\": \"2000-01-01T00:00:00\",\n    \"DeletedOn\": \"2000-01-01T00:00:00\",\n    \"Email\": \"test1@test.test.tmp\",\n    \"Fax\": \"000.000.000\",\n    \"Name\": \"test1\",\n    \"Lastlogin\": \"2000-01-01T00:00:00\",\n    \"Password\": \"test\",\n    \"PortalId\": 1,\n    \"RoleId\": 1,\n    \"StatusId\": 1,\n    \"Telephone\": \"000.000.000\",\n    \"UpdatedOn\": \"2000-01-01T00:00:00\",\n    \"Username\": \"test1123123\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9080/api/redarbor/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9080",
+							"path": [
+								"api",
+								"redarbor",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DeleteEmployee",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "accept",
+								"value": "*/*"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:9080/api/redarbor/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9080",
+							"path": [
+								"api",
+								"redarbor",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "GetToken",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"var jsonData = JSON.parse(responseBody);",
+							"",
+							"pm.test(\"Set up Auth token\", function(){",
+							"pm.environment.set(\"token\",jsonData.token)",
+							"console.log(jsonData.token)",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "accept",
+						"value": "*/*"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"username\": \"userTest\",\n  \"password\": \"RedArbor2024\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9080/api/auth/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9080",
+					"path": [
+						"api",
+						"auth",
+						"login"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
