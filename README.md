@@ -11,6 +11,7 @@ La aplicación está dockerizada para facilitar su despliegue e incluye tanto la
 - [Requisitos](#requisitos)
 - [Instalación](#instalación)
 - [Uso](#uso)
+- [Swagger](#url-swagger)
 - [Comandos de Docker](#comandos-de-docker)
 - [Postman](#Colección-de-Postman)
 - [Endpoints de la API](#endpoints-de-la-api)
@@ -39,6 +40,10 @@ La aplicación está dockerizada para facilitar su despliegue e incluye tanto la
 2. Para detener y eliminar los contenedores, ejecuta:
    ```bash
    docker-compose down
+
+## Url Swagger
+
+Puedes acceder al API en Swagger por medio de la siguiente [Swagger UI](URL http://localhost:9080/swagger/index.html)
 
 ## Colección de Postman
 
