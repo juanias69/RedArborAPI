@@ -43,7 +43,7 @@ La aplicación está dockerizada para facilitar su despliegue e incluye tanto la
 
 ## Url Swagger
 
-Puedes acceder al API en Swagger por medio de la siguiente [Swagger UI](URL http://localhost:9080/swagger/index.html)
+Puedes acceder al API en Swagger por medio de la siguiente Url [Swagger](http://localhost:9080/swagger/index.html)
 
 ## Colección de Postman
 
